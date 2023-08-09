@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  
+</head>
+<body>
+  <p></p>
+  <script>
+    let x = [4,7,2,3,2,7,4,4]
+    let count = 0, a, b, y = []
+
+
+    for(a of x){
+      for(b of y){
+          if(b === a){
+            count++
+          }
+        }
+      
+      if(count === 0){
+        y.push(a)
+      }
+      count = 0
+    }
+
+
+    console.log('distinct values:',y)
+  </script>
+</body>
+</html>
+
